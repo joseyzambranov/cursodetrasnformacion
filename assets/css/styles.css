@@ -8,7 +8,7 @@
   /*========== Colors ==========*/
   /* Change favorite color to match images */
   /*Green dark 190 - Green 171 - Grren Blue 200*/
-  --hue-color: 200;
+  --hue-color: 190;
 
   /* HSL color mode */
   --first-color: hsl(var(--hue-color), 64%, 22%);
@@ -148,6 +148,7 @@ input {
   border: none;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
+
 }
 
 button {
@@ -320,13 +321,13 @@ input {
 .home__data-subtitle {
   display: block;
   font-weight: var(--font-semi-bold);
-  margin-bottom: var(--mb-0-75);
+  margin-bottom: var(--mb-2);
 }
 
 .home__data-title {
   font-size: var(--biggest-font-size);
   font-weight: var(--font-medium);
-  margin-bottom: var(--mb-2-5);
+  margin-bottom: var(--mb-0-5);
 }
 
 .home__social {
@@ -384,6 +385,7 @@ input {
   padding: 1rem 2rem;
   font-weight: var(--font-semi-bold);
   transition: .3s;
+  border-radius: 3rem;
 }
 
 .button:hover {
