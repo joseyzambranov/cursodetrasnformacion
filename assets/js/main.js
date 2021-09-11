@@ -125,6 +125,7 @@ sr.reveal(`.home__data, .home__social-link, .home__info,
            .experience__data, .experience__overlay,
            .place__card,
            .sponsor__content,
+           .section__title,
            .footer__data, .footer__rights`,{
     origin: 'top',
     interval: 100,
@@ -132,12 +133,15 @@ sr.reveal(`.home__data, .home__social-link, .home__info,
 
 sr.reveal(`.about__data, 
            .video__description,
+           presentation__name,
+           .presentation__description,
            .subscribe__description`,{
     origin: 'left',
 })
 
 sr.reveal(`.about__img-overlay, 
            .video__content,
+           
            .subscribe__form`,{
     origin: 'right',
     interval: 100,
