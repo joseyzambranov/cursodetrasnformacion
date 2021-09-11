@@ -133,15 +133,17 @@ sr.reveal(`.home__data, .home__social-link, .home__info,
 
 sr.reveal(`.about__data, 
            .video__description,
-           presentation__name,
+           .services__description,
+           .presentation__name,
            .presentation__description,
+           
            .subscribe__description`,{
     origin: 'left',
 })
 
 sr.reveal(`.about__img-overlay, 
            .video__content,
-           
+           .services__title,
            .subscribe__form`,{
     origin: 'right',
     interval: 100,
