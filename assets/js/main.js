@@ -205,7 +205,24 @@ const countdown = (deadline, elem, finalMessage) =>{
 
     const timerUpdate = setInterval (()=>{
         let t = getRemainTime(deadline);
-        el.innerHTML = `${t.remainDays}d:${t.remainHours}H:${t.remainMinutes}M:${t.remainSeconds}s`
+        /*el.innerHTML = `${t.remainDays}d:${t.remainHours}H:${t.remainMinutes}M:${t.remainSeconds}s`*/
+        el.innerHTML = `<div class="block">
+        <div class="day" id="day">${t.remainDays}</div>
+        <p>Dias</p>
+  </div>
+  <div class="block">
+      <div class="hour" id="hour">${t.remainHours}</div>
+        <p>Horas</p>
+  </div>
+  <div class="block">
+      <div class="min" id="min">${t.remainMinutes}</div>
+        <p>Minutos</p>
+  </div>
+  <div class="block">
+      <div class="seg" id="seg">${t.remainSeconds}</div>
+        <p>Segs</p>
+  </div>`
+
     if (t.remainTime <=1){
         clearInterval(timerUpdate);
         el.innerHTML = finalMessage;
@@ -213,5 +230,24 @@ const countdown = (deadline, elem, finalMessage) =>{
 },1000)
     }
 
-    countdown('Sep 11 2021 17:11:46 GMT-0500', 'clock', 'feliz año');
+    countdown('Oct 3 2021 16:00:00 GMT-0500', 'clock', 'Ya empezó el curso');
 
+/*==================== TESTIMONIAL ====================*/
+let swiperTestimonial = new Swiper('.testimonial__container', {
+    
+    loop:true,
+    grabCursor:true,
+    spaceBetween:48,
+   
+    pagination: {
+      el: '.swiper-pagination',
+      clickable:true,
+      dynamicBullets:true,
+    },
+    breakpoints:{
+        568:{
+            slidesPerView: 2,
+        }
+    }
+ 
+  });
