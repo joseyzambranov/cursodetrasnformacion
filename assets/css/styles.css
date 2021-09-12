@@ -8,7 +8,7 @@
   /*========== Colors ==========*/
   /* Change favorite color to match images */
   /*Green dark 190 - Green 171 - Grren Blue 200*/
-  --hue-color: 190;
+  --hue-color: 200;
 
   /* HSL color mode */
   --first-color: hsl(var(--hue-color), 64%, 22%);
@@ -101,7 +101,7 @@ body.dark-theme {
 }
 
 .change-theme-name {
-  font-size: var(--small-font-size);
+  font-size: var(--normal-font-size);
 }
 
 /*=============== BASE ===============*/
@@ -178,7 +178,7 @@ input {
 }
 .section__subtitle{
   display: block;
-  font-size: var(--small-font-size);
+  font-size: var(--normal-font-size);
   margin-bottom: var(--mb-2-5);
 }
 
@@ -326,7 +326,7 @@ input {
   background-color: var(--first-color);
   box-shadow: 0 0 6px 2px #727272 inset;
   color: var(--white-color);
-  font-size: var(--normal-font-size);
+  font-size: var(--h2-font-size);
   font-weight: var(--font-semi-bold);
   width: 100px;
   height: 70px;
@@ -343,17 +343,17 @@ input {
   margin-bottom: var(--mb-1);
 }
 .testimonial__img{
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   margin-right: var(--mb-0-75);
 }
 .testimonial__name{
-  font-size: var(--h3-font-size);
+  font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
 }
 .testimonial__client{
-  font-size: var(--small-font-size);
+  font-size: var(--normal-font-size);
   color: var(--text-color-light);
 }
 .testimonial__description{
@@ -400,8 +400,8 @@ input {
   left: 0;
   width: 100%;
   height: 100vh;
-  object-fit: cover;
-  object-position: 25%;
+  object-fit:cover;
+  object-position: 66%;
 }
 
 .home__container {
@@ -455,7 +455,7 @@ input {
 
 .home__info-title {
   display: block;
-  font-size: var(--small-font-size);
+  font-size: var(--normal-font-size);
   font-weight: var(--font-semi-bold);
   margin-bottom: var(--mb-0-75);
 }
@@ -503,7 +503,7 @@ h2.section__title{
 .services__title{
   
   text-align: center;
-  font-size: var(--h3-font-size);
+  font-size: var(--h1-font-size);
   color: var(--title-color);
   margin-bottom: var(--mb-1);
 }
@@ -706,7 +706,7 @@ h2.section__title{
 }
 
 .experience__description {
-  font-size: var(--small-font-size);
+  font-size: var(--normal-font-size);
 }
 
 .experience__img {
@@ -1001,13 +1001,23 @@ h2.section__title{
 }
 
 /*=============== MEDIA QUERIES ===============*/
+@media screen and (max-width: 440px) {
+  .countdown__container .block div{
+    
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+    border-radius: .5rem;
+  }
+}
+
 /* For small devices */
 @media screen and (max-width: 340px) {
 
   .countdown__container .block div{
     
-    width: 55px;
-    height: 55px;
+    width: 60px;
+    height: 60px;
     margin-bottom: 10px;
     border-radius: .5rem;
   }
@@ -1037,6 +1047,8 @@ h2.section__title{
 
 /* For medium devices */
 @media screen and (min-width: 568px) {
+
+  
   .video__container {
     display: grid;
     grid-template-columns: .6fr;
