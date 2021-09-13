@@ -135,8 +135,8 @@ sr.reveal(`.about__data,
            .video__description,
            .services__description,
            .presentation__name,
+           testimonial section,
            .presentation__description,
-           
            .subscribe__description`,{
     origin: 'left',
 })
