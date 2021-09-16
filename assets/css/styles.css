@@ -467,6 +467,7 @@ input {
 
 .home__info-overlay {
   overflow: var(--img-hidden);
+  width: 350px;
 }
 
 .home__info-img {
