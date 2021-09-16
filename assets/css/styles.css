@@ -1192,8 +1192,14 @@ h2.section__title{
     padding: 0 .5rem;
   }
   .footer__rights {
-    flex-direction: row;
+   /* flex-direction: row;
     justify-content: space-between;
+    text-align: center;*/
+    display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  text-align: center;
+
   }
 }
 
