@@ -206,22 +206,40 @@ const countdown = (deadline, elem, finalMessage) =>{
     const timerUpdate = setInterval (()=>{
         let t = getRemainTime(deadline);
         /*el.innerHTML = `${t.remainDays}d:${t.remainHours}H:${t.remainMinutes}M:${t.remainSeconds}s`*/
-        el.innerHTML = `<div class="block">
-        <div class="day" id="day">${t.remainDays}</div>
-        <p>Dias</p>
-  </div>
-  <div class="block">
-      <div class="hour" id="hour">${t.remainHours}</div>
-        <p>Horas</p>
-  </div>
-  <div class="block">
-      <div class="min" id="min">${t.remainMinutes}</div>
-        <p>Minutos</p>
-  </div>
-  <div class="block">
-      <div class="seg" id="seg">${t.remainSeconds}</div>
-        <p>Segs</p>
-  </div>`
+        el.innerHTML = `
+
+        
+        <div class="countdown section"> <h2 class="section__title">¿Cuanto falta para el curso de Transformación?</h2>
+        
+        <div class="countdown__container">
+        
+        <div class="block">
+                    <div class="day" id="day">${t.remainDays}</div>
+                    <p>Dias</p>
+            </div>
+            <div class="block">
+                <div class="hour" id="hour">${t.remainHours}</div>
+                    <p>Horas</p>
+            </div>
+            <div class="block">
+                <div class="min" id="min">${t.remainMinutes}</div>
+                    <p>Minutos</p>
+            </div>
+            <div class="block">
+                <div class="seg" id="seg">${t.remainSeconds}</div>
+                    <p>Segs</p>
+            </div>
+
+
+        </div>    
+        
+          
+
+        <div class="countdown__button">
+                <a href="https://wa.me/+593987236631?text=Me%20interesa%20el%20curso%20de%20transformación" class="button">Quiero estar en la clase</a>
+            </div>
+            </div>  
+        `
 
     if (t.remainTime <=1){
         clearInterval(timerUpdate);
@@ -230,7 +248,7 @@ const countdown = (deadline, elem, finalMessage) =>{
 },1000)
     }
 
-    countdown('Oct 3 2021 16:00:00 GMT-0500', 'clock', 'Ya empezó el curso');
+    countdown('Oct 3 2021 16:00:00 GMT-0500', 'clock', '<div class="countdown section"> <h2 class="section__title">¿Cuanto falta para el curso de Transformación?</h2><h2 class="section__subtitle">¡ Ya comenzó !</h2><div class="countdown__button"><a href="https://wa.me/+593987236631?text=Me%20interesa%20el%20curso%20de%20transformación" class="button">Quiero estar en la próxima clase</a></div></div>');
 
 /*==================== TESTIMONIAL ====================*/
 let swiperTestimonial = new Swiper('.testimonial__container', {
