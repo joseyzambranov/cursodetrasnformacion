@@ -395,7 +395,7 @@ input {
 
 /*=============== HOME ===============*/
 .home__img {
-  position: absolute;
+  position:absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -412,10 +412,17 @@ input {
 }
 
 .home__data-subtitle, 
-.home__data-title, 
+
 .home__social-link, 
 .home__info {
   color: var(--white-color);
+  
+  
+}
+.home__data-title {
+  color: var(--white-color);
+  -webkit-text-stroke: 1.5px var(--first-color);
+  
 }
 
 .home__data-subtitle {
