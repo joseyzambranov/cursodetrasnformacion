@@ -421,7 +421,7 @@ input {
 }
 .home__data-title {
   color: var(--white-color);
-  -webkit-text-stroke: 1.5px var(--first-color);
+  
   
 }
 
@@ -1221,7 +1221,7 @@ h2.section__title{
     grid-template-rows: 2fr .5fr;
   }
   .home__info {
-    width: 328px;
+    width: 280px;
     grid-template-columns: 1fr 2fr;
     column-gap: 2rem;
   }
