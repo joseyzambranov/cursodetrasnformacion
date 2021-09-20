@@ -1221,7 +1221,7 @@ h2.section__title{
     grid-template-rows: 2fr .5fr;
   }
   .home__info {
-    width: 280px;
+    width: 328px;
     grid-template-columns: 1fr 2fr;
     column-gap: 2rem;
   }
